@@ -1,0 +1,32 @@
+ /* 載入外部字型 */
+ @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+ /* 下載字型 */
+ @font-face {
+   font-family: font1;
+   src: url(../fonts/JustOldFashion.ttf);
+ }
+ .font1 {
+   font-family: font1;
+   /* font-size: 40px; */
+ }
+ @font-face {
+   src: url(../fonts/SCRIPTIN.ttf);
+   font-family: font2;
+ }
+ .font2 {
+   font-family: font2;
+   /* font-size: 40px; */
+ }
+ @font-face {
+   font-family: font3;
+   src: url(../fonts/NotoSans-Regular.ttf);
+ }
+ .font3 {
+   font-family: font3;
+   /* font-size: 40px; */
+ }
+ p {
+   font-family: "Indie Flower", cursive;
+   /* font-size: 40px; */
+ }

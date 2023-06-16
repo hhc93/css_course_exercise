@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超連結元素</title>
+    <style>
+        /* class為list裡面的所有a標籤，空格寫法與嚴謹寫法擇一，不可混用*/
+        /* .list a:link{
+            text-decoration: none;
+            color:#FFA101;
+        }
+        .list a:visited{
+            color:darkgreen;
+        }
+        .list a:hover{
+            color: #31525B;
+            text-decoration: underline;
+        }
+        .list a:active{
+            color: #FAE6B1;
+            font-size: 30px;
+        } */
+        /* 嚴謹寫法，需要每一個標籤都指定 */
+        .list>li>a:link{
+            text-decoration: none;
+            color:#FFA101;
+        }
+        .list>li>a:visited{
+            color:darkgreen;
+        }
+        .list>li>a:hover{
+            color: #31525B;
+            text-decoration: underline;
+        }
+        .list>li>a:active{
+            color: #FAE6B1;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.iSpan.com.tw">資展國際</a>
+    <a href="first.html">First</a>
+    <a href="list.html">List</a>
+    <!-- 連結電子郵件 -->
+    <a href="mailto:xf125017@gmail.com">mail to me</a>
+    <a href="#book">bookmark</a>
+    <a href="#end">回到頁尾</a>
+
+    <ul class="list">
+        <li><a href="http://www.pchome.com.tw">首頁</a></li>
+        <li><a href="list.html">關於</a></li>
+        <li><a href="hyperlink.html">部落格</a></li>
+        <li><a href="mailto:xf125017@gmail.com">聯絡</a></li>
+    </ul>
+
+
+    <!-- id連結同一網頁特定位置 -->
+    <h2 id="book">去年國人10大死因統計 新冠第3名</h2>
+
+    <!-- <figure></figure>為結構語意標籤 -->
+    <figure>
+    <img src="images/1.webp" title="鮮豔的橘色與舒緩的藍色是經典的吸睛配色" alt="橘藍配色" width="600" height="400">
+    <a href="https://www.shutterstock.com/zh-Hant/blog/color-palettes-for-websites"><img src="images/1.webp" title="鮮豔的橘色與舒緩的藍色是經典的吸睛配色" alt="橘藍配色" width="600" height="400"></a>
+    <figcaption>鮮豔的橘色與舒緩的藍色是經典的吸睛配色</figcaption></figure>
+
+    <p>衛生福利部統計處昨公布去年國人死因統計結果<br/>，受人口老化與疫情影響，去年總死亡人數首度突破廿萬人，達廿萬八四三八人，創下歷史新高，而死亡人數年增百分之十三點二，也是史上最高，與前年相比，去年死亡人數增加共二萬四二六六人，主因為新冠死亡人數暴增，共一萬四六六七人。</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nostrum explicabo pariatur ipsa placeat eos culpa et reiciendis quas neque officiis odio sed, hic nulla vitae veniam enim at ullam non? Nulla, magnam tempore? Quibusdam sapiente aliquid fugiat ratione. Maiores, in ipsa. Natus voluptates deleniti in saepe cupiditate illum hic laboriosam neque quisquam nisi excepturi animi cum eum doloremque reiciendis atque esse vel, obcaecati nam. Accusantium magni dolorum ipsam vero sequi, repellendus nesciunt ad porro delectus itaque temporibus minus ab odio consequatur quis recusandae hic modi at ratione in doloribus qui perferendis et libero. Blanditiis possimus iusto provident rerum labore reiciendis nobis aperiam fugit in, magnam dolorem voluptate, voluptatibus odio. Ratione velit ex molestias? Magni libero quae obcaecati itaque alias, facere a? Deserunt, officiis rem asperiores odit porro eaque fugit quasi! Accusantium necessitatibus eaque corporis pariatur accusamus eius, reiciendis dolore consequatur, id, dolor officiis quasi! Debitis ullam quasi eos, tempore dicta facilis accusantium, provident quas dolorem quo at maiores expedita ipsa laudantium ea nostrum voluptatibus optio eius voluptates culpa aliquid magni. Dolorum placeat quisquam modi laboriosam veritatis iure, assumenda aperiam laborum atque voluptas tenetur error, est eius suscipit dolores culpa officiis aliquam odit illo repellendus? Magnam obcaecati enim deleniti error necessitatibus eveniet ipsam amet nesciunt hic sed culpa, molestiae placeat nemo dolorum aperiam, eaque pariatur deserunt doloribus quam inventore corporis. Incidunt ratione excepturi voluptatem veniam, explicabo velit, aperiam libero beatae maiores consectetur possimus similique debitis modi minus. Blanditiis, saepe ab sit quas numquam dolorem nihil? Dolor error iste illum dicta veniam repellat similique possimus vero necessitatibus voluptatem saepe voluptatum nisi temporibus exercitationem quasi libero, assumenda itaque minus reiciendis atque quas? Dolorum harum eligendi officia placeat atque, facere obcaecati reiciendis cupiditate eos tempore? Vel in velit incidunt qui rerum? Obcaecati odio voluptas doloribus unde rem distinctio a maxime voluptatibus asperiores. Nobis quos incidunt consequuntur totam minus deleniti laborum fugit eum, corporis quaerat beatae dignissimos molestiae placeat commodi explicabo itaque similique, pariatur ipsa quidem aspernatur? Neque distinctio quae consequatur provident quia est, adipisci quis sunt? Nemo, fugiat dolore, nostrum, cupiditate necessitatibus obcaecati quidem quam numquam voluptates facere atque aliquam nisi excepturi? Quasi impedit amet, similique consequatur odio doloremque asperiores dolore inventore soluta sunt a eius quae, ea deleniti cupiditate laudantium delectus illum, fugiat cumque dolor vitae in? Ad architecto nihil sapiente nostrum repellat minima eaque necessitatibus aperiam soluta tenetur! Adipisci autem unde dignissimos earum, dolores libero harum iure error voluptatibus esse dolore optio. Cum hic, ex nobis voluptatum molestiae eius porro culpa, provident minus nulla dicta mollitia earum dolore qui quas tempore perspiciatis distinctio quasi ipsam ullam id molestias at! Eveniet, unde dolores. Natus, autem quidem? Debitis dolorum facilis quis. Beatae dolorem ducimus blanditiis ut accusamus mollitia incidunt ullam architecto exercitationem fugit id ad quasi maiores perferendis cum, nostrum rem quos officia. Officiis reiciendis sapiente id doloremque tempora voluptates hic ipsum illum ipsa a repellendus dolor rerum, aliquid cupiditate earum laborum voluptatibus laboriosam veniam quia assumenda iste dicta eos esse velit. Laudantium est doloremque, error harum aliquam sequi accusamus voluptate a dolor consequatur iure quae reprehenderit maiores tenetur eaque illo ratione optio atque? Sunt numquam voluptas assumenda ipsum nesciunt obcaecati nostrum delectus quo quibusdam nisi id laborum sint voluptate accusantium laudantium, deleniti velit doloremque culpa qui quos eaque explicabo. Quibusdam corrupti recusandae voluptatibus similique voluptates. Perspiciatis, deleniti quis ex nam nobis ipsum a. Vitae est praesentium ducimus aut debitis fugiat error saepe voluptates molestiae vero, nihil non unde cum labore dolorem soluta repudiandae. Suscipit, amet. Placeat in dicta consequatur ut unde at dolorum, tempora voluptate assumenda doloribus totam qui magnam minus inventore fuga accusantium. Enim optio cum dolor similique velit molestias quos quis nam, possimus recusandae nihil quaerat commodi minus, impedit eaque. Repellendus ab voluptates similique, dignissimos adipisci nihil quisquam hic praesentium ipsum dolores qui ducimus sequi facere atque harum obcaecati magni labore sunt vitae. Laudantium dolorem veniam commodi dicta atque facilis eum saepe quisquam reprehenderit explicabo doloribus necessitatibus, ad ratione! Ullam quae distinctio, dicta ipsam maiores laborum odit accusantium eos ratione commodi autem aliquam, doloribus esse eaque sint asperiores, ea qui reprehenderit consectetur possimus tenetur laboriosam. Ipsum, consectetur repudiandae ab voluptatibus nam ex accusamus culpa facere nemo sed at? Unde iusto, odio cumque pariatur perspiciatis nesciunt quibusdam vel necessitatibus quam magnam quasi nulla inventore quos laboriosam dolore assumenda et harum repudiandae? Qui quisquam facilis consequatur aperiam voluptatem ut cum aut iste nobis quas dolore adipisci maiores ab voluptate optio sapiente vero fugit, obcaecati ea mollitia illo dolorem earum velit inventore. Assumenda sunt, doloribus voluptas nemo iure accusamus nostrum? Quisquam qui sed debitis, soluta eos esse unde ratione, sint labore ipsa id sapiente tenetur quidem natus aspernatur! Aut numquam quia et sit porro, natus qui quam? Aliquam molestiae voluptates perspiciatis quam magni exercitationem. Quae iusto tempora quasi in eaque dolorum nam maxime assumenda, sint rerum est magni necessitatibus aliquam nostrum ut autem deleniti quidem aspernatur? Quidem non nihil neque ipsam expedita suscipit quas culpa possimus consectetur quam excepturi, similique quo eaque error inventore. Accusamus, nemo quaerat assumenda, sapiente earum recusandae dolore quam nobis odit sit aspernatur nam veniam consequuntur nisi perferendis voluptatum eius commodi! Eveniet, eaque voluptatibus ullam ipsa enim cumque at. Aliquid consectetur veritatis ipsam deserunt animi earum sapiente delectus consequatur, doloribus magnam tempora voluptate ducimus quos repellat accusantium cum explicabo porro sequi impedit enim illum modi laudantium reprehenderit! Corporis laudantium, dolore commodi, blanditiis quaerat reiciendis tempora veritatis quod dicta hic doloribus. Natus, sapiente! Id temporibus explicabo officia reiciendis. Eveniet optio voluptates, rem doloremque in quasi at quos eligendi animi nobis, aliquid quibusdam aut obcaecati eius! Incidunt omnis vero minus quidem, doloremque porro soluta assumenda cupiditate quam dolore est sed aliquid tenetur dolorem corrupti unde itaque officia earum? Distinctio deleniti sed dicta nostrum obcaecati aut earum facere debitis nulla esse vitae perspiciatis nobis eaque odio similique rerum fuga iusto, est sequi inventore tempore? Perferendis, ipsa incidunt aperiam, laborum atque mollitia optio labore delectus quas non dolorum error excepturi doloribus enim numquam quos commodi est consectetur? Provident blanditiis illo quod exercitationem quasi ducimus, repudiandae, corporis molestias asperiores sapiente illum fuga earum dolores.</p>
+    <a href="#" id="#end">回到頁首</a>
+</body>
+</html>

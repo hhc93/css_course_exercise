@@ -1,0 +1,33 @@
+h2.st1{
+    color:blue;
+    text-decoration: underline;
+}
+.st2{
+    color:orange;
+    font-style: italic;
+}
+
+.col1{
+    color:#156064;
+}
+.col2{
+    color: #FB8F67;
+}
+.size1{
+    font-size: 3em;
+}
+.under1{
+    text-decoration: underline;
+}
+.trans1{
+    text-transform: capitalize;
+} 
+h1{
+    color: #F8E16C;
+}
+.colh1{
+    color: #00C49A;
+}
+#col2h1{
+    color:red;
+}
