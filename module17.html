@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module17</title>
     <style>
+      .list {
+        background-color: #acd6ff;
+        overflow: auto;
+        list-style-type: none;
+      }
+      .list li {
+        width: 7em;
+        float: left;
+        border-right: 1px solid #7b7b7b;
+        line-height: 2.5em;
+      }
+      .list li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+      .list li a:hover {
+        color: white;
+        background-color: green;
+      }
       h1 {
         background: yellow;
         color: red;
@@ -15,7 +35,7 @@
         width: 120px;
         height: 80px;
         border: 1px solid red;
-        overflow: hidden;
+        overflow: auto;
       }
       .box2 {
         margin: 10px;
@@ -25,11 +45,11 @@
 
         width: 600px;
       }
-      img {
+      .box2 img {
         display: block;
         /* overflow: hidden; */
       }
-      img:hover {
+      .box2 img:hover {
         transform: scale(1.2);
         /* overflow: hidden; */
         opacity: 0.8;
@@ -37,6 +57,16 @@
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul class="list">
+          <li><a href="https://www.iSpan.com.tw">資展國際</a></li>
+          <li><a href="list.html">關於</a></li>
+          <li><a href="hyperlink.html">部落格</a></li>
+          <li><a href="mailto:xf125017@gmail.com">聯絡</a></li>
+        </ul>
+      </nav>
+    </header>
     <h1>hi我是h1</h1>
     <h2>hi我是h2，h1不見了嗎</h2>
     <div class="box">

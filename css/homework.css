@@ -67,12 +67,14 @@ body{
     max-width: 900px;
     background: #ffffff;
     border-radius: 20px;
+    box-shadow:5px 5px 5px #808080;
 }
 h1{
     color:#404040;
     padding: 20px;
     font-size: 36px;
     font-weight: 700;
+    text-shadow: 5px 5px 5px #808080;
 }
 
 img{
