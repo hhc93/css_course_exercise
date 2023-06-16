@@ -61,12 +61,15 @@
   </head>
   <body>
     <h1>註冊表單</h1>
+    <!-- 以後會使用post方法，資料會放在http傳送的封包，get方法，資料顯示在網址列上 -->
+    <!-- action是伺服器上等待接收資料的程式url -->
     <form action="#" method="get" enctype="mulitpart/form-data">
       <fieldset>
         <legend>個人資料一<em>(必填)</em></legend>
         <div class="st1">
-          <label for="account1" class="t1">姓名:</label
-          ><input
+          <label for="account1" class="t1">姓名:</label>
+          <!-- input 的 name 屬性，讓後端判斷傳送的資料是什麼 -->
+          <input
             id="account1"
             type="text"
             name="account"
@@ -178,6 +181,7 @@
 
         <div class="st1">
           <label for="comment1" class="t1">意見:</label>
+          <!-- 多行文字輸入 -->
           <textarea
             id="comment1"
             name="comment"
@@ -189,6 +193,8 @@
         <div class="sub">
           <input type="submit" value="送出" />
           <input type="reset" value="清除" disabled />
+          <!-- 按鈕屬性不會傳送任何資料給後端 -->
+          <input type="button" value="按鈕" />
         </div>
       </fieldset>
     </form>

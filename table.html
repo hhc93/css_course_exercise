@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <style>
-        .tb1{
-            border: 3px solid green;
-            width: 400px;
-            border-collapse: collapse;
-            /* border-spacing: 2px; */
-        }
-        th,td{
-            /* border: 3px solid gray; */
-            border: 1px solid gray;
-        }
-        thead{
-            background: #31525B;
-            color:#FAE6BE;
-        }
-        tbody{
-            background: #B3DEE5;
-            text-align: center;
-        }
-        tbody tr:nth-child(2n){
-            background: #8bbfc7;
-        }
-        tbody tr:nth-child(2n+1){
-            background: #689ba3;
-        }
-        tbody td:hover{
-            background:#11b4cd;
-            color: white;
-        }
+      .tb1 {
+        border: 3px solid green;
+        width: 400px;
+        border-collapse: collapse;
+        /* border-spacing: 2px; */
+      }
+      th,
+      td {
+        /* border: 3px solid gray; */
+        border: 1px solid gray;
+      }
+      thead {
+        background: #31525b;
+        color: #fae6be;
+      }
+      tbody {
+        background: #b3dee5;
+        text-align: center;
+      }
+      tbody tr:nth-child(2n) {
+        background: #8bbfc7;
+      }
+      tbody tr:nth-child(2n + 1) {
+        background: #689ba3;
+      }
+      tbody td:hover {
+        background: #11b4cd;
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <table class="tb1">
-        <thead>
+      <thead>
         <tr>
-            <th>column1</th>
-            <th>column2</th>
-            <th>column3</th>
-            <th>column4</th>
+          <th>column1</th>
+          <th>column2</th>
+          <th>column3</th>
+          <th>column4</th>
         </tr>
         <tr>
-            <th colspan="2">column1</th>
-            <!-- <th>column2</th> -->
-            <th colspan="2">column3</th>
-            <!-- <th>column4</th> -->
+          <!-- 跨儲存格(column)合併，被合併掉的儲存格要刪除 -->
+          <th colspan="2">column1</th>
+          <!-- <th>column2</th> -->
+          <th colspan="2">column3</th>
+          <!-- <th>column4</th> -->
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         <tr>
-            <td>1</td>
-            <td colspan="3">2</td>
-            <!-- <td>3</td> -->
-            <!-- <td>4</td> -->
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="3">3</td>
-            <td>4</td>
+          <td>1</td>
+          <td colspan="3">2</td>
+          <!-- <td>3</td> -->
+          <!-- <td>4</td> -->
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td>4</td>
+          <td>1</td>
+          <td>2</td>
+          <!-- 跨列(->)合併，被合併的列要刪除 -->
+          <td rowspan="3">3</td>
+          <td>4</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td>4</td>
+          <td>1</td>
+          <td>2</td>
+          <!-- <td>3</td> -->
+          <td>4</td>
         </tr>
-    </tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <!-- <td>3</td> -->
+          <td>4</td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
