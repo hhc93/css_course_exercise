@@ -54,6 +54,9 @@
       em {
         color: red;
       }
+      select option[value=""] {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -143,12 +146,13 @@
         <legend>地址</legend>
         <div class="st1">
           <label for="" class="t1">縣市:</label>
-          <select name="add1" multiple size="1">
+          <select name="add1">
+            <option value="" selected>請選擇</option>
             <option value="tpe">台北市</option>
             <option value="tph">新北市</option>
             <option value="tyu">桃園市</option>
             <option value="hsc">新竹市</option>
-            <option value="khh" selected>高雄市</option>
+            <option value="khh">高雄市</option>
           </select>
         </div>
         <div class="st1">
